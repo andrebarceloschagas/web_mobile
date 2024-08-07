@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta> charset="UTF-8">
+        <meta charset="UTF-8">
         <title>Título da página</title>
     </head>
     <body>
@@ -8,26 +8,33 @@
         <h2>Segundo cabeçalho</h2>
         <h3>Terceiro cabeçalho</h3>
         <p>Parágrafo 1</p>
+        
         <img src="img/brasao.png" title="Primeira imagem" height="80" width="80">
-        <a href="http://www.uft.edu.br" target="blank">Primeiro link</a>
-        <h2>Lista não ordenada</h2>
+        
+        <a href="http://www.uft.edu.br" target="_blank">Primeiro link</a>
+        
+        <h2>Lista ordenada</h2>
         <ol>
             <li>Primeiro item</li>
             <li>Segundo item</li>
             <li>Terceiro item</li>
         </ol>
-        <h2>Lista ordenada</h2>
+
+        <h2>Lista não ordenada</h2>
         <ul>
             <li>Primeiro item</li>
             <li>Segundo item</li>
             <li>Terceiro item</li>
         </ul>
+        
         <h2>Tabela</h2>
         <table>
             <caption>Descrição da tabela</caption>
             <thead>
-                <th>Linha</th>
-                <th>Coluna</th>
+                <tr>
+                    <th>Linha</th>
+                    <th>Coluna</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -45,55 +52,8 @@
                 <tr>
                     <td>linha 4 - Coluna 1</td>
                     <td>linha 4 - Coluna 2</td>
+                </tr>
             </tbody>
         </table>
-
-        <form action="/cadastro/" method="post">
-            Login: <input type="text" name="login" placeholder="Digite seu login">
-            Senha: <input type="password" name="senha">
-
-            <input type="ratio" name="sexo" value="1" checked> Masculino>
-            <input type="ratio" name="sexo" value="2"> Feminino>
-
-            <input type="checkbox" name="veiculo1" value="bike">Eu tenho uma bike>
-            <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro>
-
-            Curso:
-            <select name="curso">
-                <option value="1">Ciência da Computação</option>
-                <option value="2">Direito</option>
-                <option value="3">Engenharia de Elétrica</option>
-                <option value="4">Medicina</option>
-            </select>
-
-            Mensagem: <textarea name="mensagem" rows="10" cols="30"></textarea>
-
-            Idade: <input type="number" name="idade" min="0" max="100" step="1">
-
-            Data de nascimento: <input type="date" name="data_nascimento">
-
-            Auto Complete: <input list="cheeses">
-            <datalist id="cheeses">
-                <option value="Parmesan">
-                <option value="Cheddar">
-                <option value="Mozzarella">
-                <option value="Gouda">
-                <option value="Feta">
-                <option value="Roquefort">
-                <option value="Brie">
-            </datalist>
-
-            <input type="hyden" name="country" value="Brasil">
-
-            <input type="reset" value="Limpar">
-            <input type="submit" value="Enviar">
-        </form>
-
-        <div>
-            Elementos de bloco
-        </div>
-
-        <span>11111</span>
-        <span>22222</span>
-
     </body>
+</html>
